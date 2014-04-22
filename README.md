@@ -1,6 +1,6 @@
 # pyedf
 
-A very basic Python module for reading EDF (European Data Format) files. 
+A simple Python module for reading EDF (European Data Format) files. 
 
 From the official [EDF+ Spec](http://www.edfplus.info/),  "The European Data Format (EDF) is a simple and flexible format for exchange and storage of multichannel biological and physical signals."
 
@@ -13,7 +13,6 @@ import pyedf
 data = pyedf.read( "../../testfile.edf" )
 
 print data['header']
-
 
 ```
 
