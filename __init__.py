@@ -23,8 +23,8 @@ def read( path ) :
 
 		# the first part of the header contains basic information about the file (256 bytes)
 
-		header['version'] = data[0:7].strip()
-		header['patient_id'] = data[7:88].strip()
+		header['version'] = data[0:8].strip()
+		header['patient_id'] = data[8:88].strip()
 		header['rec_id'] = data[88:168].strip()
 		header['startdate'] = data[168:176].strip()
 		header['starttime'] = data[176:184].strip()
